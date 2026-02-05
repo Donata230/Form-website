@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="form.css">
+
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container">
+    <!-- Login Card -->
+    <div class="login-card">
+        <h2>Login please</h2>
+
+        <div class="input-box">
+            <i class="fa fa-envelope"></i>
+            <input type="text" placeholder="Input your user ID or Email" id="username">
+        </div>
+
+        <div class="input-box">
+            <i class="fa fa-key"></i>
+            <input type="password" placeholder="Input your password" id="password">
+        </div>
+
+        <div class="options">
+            <label>
+                <input type="checkbox"> Remember me
+            </label>
+            <a href="#">Forgot Password?</a>
+        </div>
+
+        <button onclick="login()" class="login-btn">
+            <i class="fa fa-arrow-right"></i> LOG IN
+        </button>
+    </div>
+
+    <!-- Welcome Section -->
+    <div class="welcome-card">
+        
+        <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 480'><path d='M401.6 288.4 450 240l-48.4-48.4 8.1-8.2A80 80 0 0 0 296.6 70.3l-8.2 8.1L240 30l-48.4 48.4-8.2-8.1A80 80 0 0 0 70.3 183.4l8.1 8.2L30 240l48.4 48.4-8.1 8.2a80 80 0 0 0 113.1 113.1l8.2-8.1L240 450l48.4-48.4 8.2 8.1a80 80 0 0 0 113.1-113.1l-8.1-8.2Z' fill='%230A3DBF'/></svg>" 
+      alt="decorative shape" 
+      class="shape-img"
+  >
+  
+        <h1>WELCOME!</h1>
+        <p>Enter your details and start journey with us</p>
+        
+        <a href="Registration.html"><button class="signup-btn">SIGNUP</button></a>
+    </div>
+    
+</div>
+<script src="form.js"></script>
+
+</body>
+</html>
