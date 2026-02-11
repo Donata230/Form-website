@@ -1,37 +1,37 @@
-const regBtn = document.querySelector ("#reg-btn");
-const regForm = document.querySelector(".Register-card");
-regBtn.addEventListener("click",function(e) {
+regBtn = document.querySelector("#reg-btn")
+regForm = document.querySelector("#register")
+let fetchData = JSON.parse(localStorage.getItem("registerData")) ||[]
+regBtn.addEventListener("click", function(e){
   e.preventDefault()
-  const user = document.getElementById("newUser").value;
-  const email = document.getElementById("newEmail").value;
-  const country = document.getElementById("newCountry").value;
-  const number = document.getElementById("newNumber").value;
-  const password = document.getElementById("newPass").value;
-  
-  //Checking user fields before successful registration
-  if (!user || email=== "" || !country || !number || !password) {
-    alert("All fields required")
-    return;
-  }
-  
-  const userData = {
-    fullName: user,
-    userEmail: email,
-    userCountry: country,
-    userNumber: number,
-    userPassword: password,
-  }
-  
-  alert("Account created successfully 🎉")
-  window.location.href = "index.html"
-  console.log(userData)
-  regForm.reset()
+  const user = document.querySelector("#newUser").value;
+  const email = document.querySelector("#newEmail").value;
+  const country= document.querySelector("#newNumber").value;
+  const number= document.querySelector("#newCountry").value;
+  const password = document.querySelector("#newPass").value;
+  if(!user || !email || !country || !number || !password){
+  alert("All required")
+  return;
+}
 
-  /*localStorage.setItem("username", user);
-  localStorage.setItem("email", user);
-  localStorage.setItem("country", user);
-  localStorage.setItem("number", user);
-  localStorage.setItem("password", pass);*/
+alert("Successful Registration")
+const userData = {
+  userName: user,
+  userEmail: email,
+  newCountry: country,
+  newNumber: number,
+  newPassword: password,
+}
+fetchData.push(userData)
+localStorage.setItem("registerData", JSON.stringify(fetchData))
+console.log(fetchData)
+window.location.href="index.html"
 
-  /*);*/
-})
+regForm.reset()
+
+}
+)
+
+
+
+
+

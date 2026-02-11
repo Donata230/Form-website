@@ -14,7 +14,7 @@ body {
 }
 
 /* Main container */
-.container {
+.login-form {
     position: relative;
     width: 900px;
     height: 600px;
@@ -35,7 +35,7 @@ body {
     z-index: 2;
 }
 
-.login-card h2 {
+.login-card h1 {
     margin-bottom: 30px;
     color: #333;
 }
@@ -121,7 +121,7 @@ body {
     z-index: 0;
 }
 
-.welcome-card h1,
+.welcome-card h3,
 .welcome-card p,
 .welcome-card button {
     position: relative;
@@ -130,7 +130,7 @@ body {
 }
 
 
-.welcome-card h1 {
+.welcome-card h3 {
     font-size: 32px;
     margin-bottom: 15px;
 }
@@ -152,4 +152,57 @@ body {
     z-index: 5;
     border: 2px solid white;
     border-radius: 6px;
+}
+
+#dashboard{
+    display: none;
+    height: 50vh;
+    width: 90%;
+    padding: 20px;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 1.5;
+    word-spacing: 20px;
+    background: linear-gradient(145deg, #0a3dbf, #1e6cff);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsivieness*/
+@media (max-width: 768px) {
+
+  .login-form {
+    width: 100%;
+    height: auto;
+    display: flex ;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+  }
+
+  .login-card,
+  .welcome-card {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .login-card {
+    width: 100%;
+    max-width: 380px;
+    z-index: 1;
+  }
+
+  .welcome-card {
+    width: 100% ;
+    max-width: 420px;
+    height: 400px;
+    z-index: 1;
+  }
+
 }

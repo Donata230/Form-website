@@ -13,48 +13,71 @@
 </head>
 <body>
 
-<div class="container">
+<form class="login-form">
     <!-- Login Card -->
     <div class="login-card">
-        <h2>Login please</h2>
+        <h1>LOGIN</h1>
 
         <div class="input-box">
             <i class="fa fa-envelope"></i>
-            <input type="text" placeholder="Input your user ID or Email" id="username">
+            <label for="email">
+            <input type="text" placeholder="Input your Email" id="email">
+            </label>
         </div>
 
         <div class="input-box">
             <i class="fa fa-key"></i>
+            <label for="password">
             <input type="password" placeholder="Input your password" id="password">
+            </label>
         </div>
 
         <div class="options">
-            <label>
-                <input type="checkbox"> Remember me
+            <label for="checkbox">
+                <input id="checkbox" type="checkbox"> Remember me
             </label>
             <a href="#">Forgot Password?</a>
         </div>
 
-        <button onclick="login()" class="login-btn">
-            <i class="fa fa-arrow-right"></i> LOG IN
+        <button id="login-btn" type="submit" class="login-btn">
+            <i class="fa fa-arrow-right"></i> LOGIN
         </button>
     </div>
 
     <!-- Welcome Section -->
     <div class="welcome-card">
         
+        <!--SVG Image-->
         <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 480'><path d='M401.6 288.4 450 240l-48.4-48.4 8.1-8.2A80 80 0 0 0 296.6 70.3l-8.2 8.1L240 30l-48.4 48.4-8.2-8.1A80 80 0 0 0 70.3 183.4l8.1 8.2L30 240l48.4 48.4-8.1 8.2a80 80 0 0 0 113.1 113.1l8.2-8.1L240 450l48.4-48.4 8.2 8.1a80 80 0 0 0 113.1-113.1l-8.1-8.2Z' fill='%230A3DBF'/></svg>" 
       alt="decorative shape" 
       class="shape-img"
   >
   
-        <h1>WELCOME!</h1>
+        <h3>WELCOME!</h3>
         <p>Enter your details and start journey with us</p>
         
         <a class="btn" href="Registration.html">SIGNUP</a>
     </div>
     
-</div>
+</form>
+<!--Current User Dashboard-->
+<section id="dashboard" class="details">
+    <div class="user">
+        <h2 id="username">Username</h2>
+        <p>I am visiting from <span class="user-country">Nigeria</span></p>
+        <p>My Contact is <span class="user-contact">contact</span></p>
+        <p>My Email is <span class="user-email">email</span></p>
+    </div>
+    
+<!--newCountry: "080606719"
+newNumber: "Nigeria "
+newPassword: "idjdi"
+userEmail: "donatadivine@gmail.com"
+userName: "Dobata "
+
+newPassword: "sjdjsj"-->
+    
+</section>
 <script src="index.js"></script>
 
 </body>
