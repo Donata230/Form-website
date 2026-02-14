@@ -28,8 +28,8 @@ function login (event) {
         //dashBoardDisplay
         const userName = document.querySelector("#username").textContent = currentUser.userName;
         const userCountry = document.querySelector(".user-country").textContent = currentUser.newCountry;
-        const userContact = document.querySelector(".user-contact").textContent = currentUser.newNumber;
-        const userEmail = document.querySelector(".user-email").textContent = currentUser.userEmail;
+        const userEmail = document.querySelector(".user-email").textContent = currentUser.newEmail;
+        const userContact = document.querySelector(".user-contact").textContent = currentUser.userNumber;
       }
   
 

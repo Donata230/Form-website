@@ -154,11 +154,33 @@ body {
     border-radius: 6px;
 }
 
+.user-image {
+    display: flex;
+    align-items: center;
+    gap: 12px;  
+}
+
+#icon {
+   margin-bottom: 15px;
+   width: 60px;
+   height: 60px;
+   border-radius: 50px;
+}
+
+hr {
+    background: #fff;
+    margin: 20px 0;
+    height: 2px;
+    width: 100%;
+    border: none;
+}
+
 #dashboard{
     display: none;
-    height: 50vh;
+    margin: 0;
+    height: 30vh;
     width: 90%;
-    padding: 20px;
+    padding: 30px;
     border-radius: 8px;
     justify-content: center;
     align-items: center;
@@ -204,5 +226,44 @@ body {
     height: 400px;
     z-index: 1;
   }
+
+
+/*dashboard{
+    display: none;
+    margin: 0;
+    height: 10vh;
+    width: 10%;
+    padding: 30px;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-size: 10px;
+    font-weight: bold;
+    line-height: 1.1;
+    word-spacing: 15px;
+}
+
+.user-image {
+    display: flex;
+    align-items: center;
+    gap: 10px;  
+}
+
+#icon {
+   margin-bottom: 15px;
+   width: 15px;
+   height: 15px;
+   border-radius: 50px;
+}
+
+hr {
+    background: #fff;
+    margin: 20px 0;
+    height: 2px;
+    width: 100%;
+    border: none;
+}*/
+
 
 }

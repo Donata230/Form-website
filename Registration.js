@@ -5,8 +5,8 @@ regBtn.addEventListener("click", function(e){
   e.preventDefault()
   const user = document.querySelector("#newUser").value;
   const email = document.querySelector("#newEmail").value;
-  const country= document.querySelector("#newNumber").value;
-  const number= document.querySelector("#newCountry").value;
+  const country= document.querySelector("#newCountry").value;
+  const number= document.querySelector("#newNumber").value;
   const password = document.querySelector("#newPass").value;
   if(!user || !email || !country || !number || !password){
   alert("All required")
